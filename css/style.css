@@ -15,12 +15,12 @@ header,
 main {
   padding: 2%;
   width: 70%;
-  margin: 0% calc((100% - 70%) / 2);
+  margin: 0 auto;
 }
 .clearfix::after {
   content: "";
   clear: both;
-  display: block;
+  display: table;
 }
 
 .article {
@@ -30,7 +30,7 @@ main {
 .label {
   width: 30%;
   height: 100px;
-  margin: 1.5%;
+  margin: calc(10% / 6);
   background-color: #000;
   float: left;
   box-shadow: 0 0 10px #000;
@@ -58,8 +58,6 @@ header > h1 {
 .label img {
   height: 100%;
   float: left;
-  vertical-align: auto;
-  vertical-align: middle;
 }
 
 /***** /Content ******/
