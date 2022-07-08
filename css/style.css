@@ -1,0 +1,89 @@
+/***** Generics *****/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/***** /Generics *****/
+
+/***** setting box container ******/
+
+header,
+main {
+  padding: 2%;
+  width: 70%;
+  margin: 0% calc((100% - 70%) / 2);
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.article {
+  margin-bottom: 5%;
+}
+
+.label {
+  width: 30%;
+  height: 100px;
+  margin: 1.5%;
+  background-color: #000;
+  float: left;
+  box-shadow: 0 0 10px #000;
+}
+
+.box {
+  float: left;
+  vertical-align: middle;
+
+  position: relative;
+  top: 50%;
+  left: 5%;
+  transform: translate(0, -50%);
+}
+/***** /setting box container ******/
+
+/***** Content ******/
+
+header > h1 {
+  color: hsl(339deg 78% 55%);
+
+  font-family: "Fredoka One", cursive;
+  font-size: 2.5em;
+}
+.label img {
+  height: 100%;
+  float: left;
+  vertical-align: auto;
+  vertical-align: middle;
+}
+
+/***** /Content ******/
+
+/***** Utilities *****/
+
+header > h1,
+.article {
+  text-align: center;
+}
+.label {
+  color: white;
+}
+
+h3.name {
+  font-size: larger;
+}
+
+.box > span {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+  color: hsl(196deg 66% 57%);
+}
+/***** /Utilities *****/
